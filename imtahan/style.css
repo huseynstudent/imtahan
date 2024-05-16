@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+}
+label{
+    cursor: context-menu;
+}
+.smallborder1{
+    border: 1px red solid;
+    width: 40px;
+    margin: 50px;
+}
+h4{
+    color: red;
+}
+#container{
+    width: 150vh;
+    height: 700px;
+    display: inline-flex;
+    margin: 50px;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: space-evenly;
+}
+.minicontainer{
+    width: 90%;
+    transition: width 200ms ease-in;
+    display: flex;
+    justify-content: space-between;
+}
+.smalldivs{
+    width: 350px;
+    height: 90px;
+    background-color: #bdbdbd;
+    margin-left: 0px;
+    padding: 40px 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: background-color 200ms;
+    justify-content: space-between;
+}
+label{
+    font-size: xx-large;
+    transition: padding-left 200ms ease-out;
+}
+img{
+    margin-right: -20px;
+}
+.smalldivs:hover{
+    background-color: red;
+    transition: background-color 200ms;
+}
+.smalldivs:hover label{
+    padding-left: 40px;
+    transition: padding-left 200ms ease-out;
+}
+.smalldivs:hover .minicontainer{
+    width: 94%;
+    transition: width 200ms ease-in;
+}
+.titlediv{
+    width: 600px;
+    height: 145px;
+    margin-left: 0PX;
+    margin: 50px;
+    margin-bottom: 20px;
+    display:inline-block;
+}
+#smallborder{
+    border: 1px red solid;
+    height: 40px;
+    margin: 50px;
+    width: 0;
+}
+#forsmallborder{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#section{
+    width:150vh;
+    display: flex;
+}
+#spaceholder{
+    display: flex;
+    width: 300px;
+    height: 100px;
+
+}
+#bigemptybutton{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red 3px solid;
+}
+#filler{
+    width: 0;
+    height: 53px;
+    transition: width 1s ease-in-out;
+    background-color: red;
+    margin-left: -85px;
+    z-index: -1;
+}
+#bigemptybutton:hover+#filler{
+    width: 85px;
+    transition: width 1s ease-in-out;
+}
+#bigemptybutton:hover{
+    color: aliceblue;
+    transition: color 1s;
+}
+
+@media screen and (max-width: 800px){
+    #container{
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    #section{
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+}
